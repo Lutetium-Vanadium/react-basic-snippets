@@ -1,0 +1,75 @@
+{
+    "index.js boilerplate": {
+        "prefix": "boilerin",
+        "body": ["import ${1} from \"./${1}\";", "", "export default ${1};${0}"],
+        "description": "Boiler plate which imports and exports default"
+    },
+    "import default": {
+        "prefix": "imp",
+        "body": "import ${1} from \"./${1}\";${0}",
+        "description": "import default"
+    },
+    "import destructured": {
+        "prefix": "imd",
+        "body": "import { ${2} } from \"./${1}\";${0}",
+        "description": "import destructured"
+    },
+    "export default": {
+        "prefix": "exp",
+        "body": "export default ${1};",
+        "description": "export default"
+    },
+    "Basic Functional Component": {
+        "prefix": "rfc",
+        "body": [
+            "import React from \"react\";",
+            "",
+            "function ${TM_FILENAME_BASE}() {",
+            "return <h1>${TM_FILENAME_BASE}${0}</h1>;",
+            "}",
+            "",
+            "export default ${TM_FILENAME_BASE};"
+        ],
+        "description": "Basic React Functional Component with no State."
+    },
+    "Basic Functional Component with State": {
+        "prefix": "rfcs",
+        "body": [
+            "import React, { useState } from \"react\";",
+            "",
+            "function ${TM_FILENAME_BASE}() {",
+            "return <h1>${TM_FILENAME_BASE}${0}</h1>;",
+            "}",
+            "",
+            "export default ${TM_FILENAME_BASE};"
+        ],
+        "description": "Basic React Functional Component with no State."
+    },
+    "Console Log": {
+        "prefix": "cl",
+        "body": "console.log(${0});",
+        "description": "Console log text"
+    },
+    "Console Log Obj": {
+        "prefix": "clo",
+        "body": "console.log({ ${0} });",
+        "description": "Console log Object"
+    },
+    "useState": {
+        "prefix": "useState",
+        "body": "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialState});${0}",
+        "description": "Use State Snippet"
+    },
+    "useEffect": {
+        "prefix": "useEffect",
+        "body": [
+            "useEffect(() => {",
+            "\t${1:effect}",
+            "\treturn () => {",
+            "\t\t${2:cleanup}",
+            "\t}",
+            "}, [${3}]);${0}"
+        ],
+        "description": "Use Effect Snippet"
+    }
+}
