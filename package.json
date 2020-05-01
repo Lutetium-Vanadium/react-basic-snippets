@@ -1,0 +1,37 @@
+{
+  "name": "react-basic-snippets",
+  "displayName": "React Basic Snippets",
+  "description": "Basic code snippets that I use",
+  "version": "1.0.0",
+  "publisher": "Lutetium-Vanadium",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lutetium-vanadium/react-basic-snippets"
+  },
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.js.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.ts.json"
+      }
+    ]
+  }
+}
